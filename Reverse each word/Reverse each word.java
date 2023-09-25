@@ -13,8 +13,8 @@ public class Solution {
         String ans = ""; // default string to be returned/added to the sentence for output as a sentence having each word reversed
         
         for(int i = 0; i < arr.length; i++){
-            String temp = arr[i];
-            String defaultString = "";
+            String temp = arr[i]; // store current word
+            String defaultString = ""; // store reverse version of word
             
             for(int j = temp.length() - 1; j >= 0; j--){
                 defaultString += temp.charAt(j);
